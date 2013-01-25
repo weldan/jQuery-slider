@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <title>example 01 - text</title>
+    <style>
+    #hoho {
+        border:1px solid #000;
+        padding: 10px;
+        width: 400px;
+    }
+    img {
+        width: 80%;
+    }
+    </style>
+</head>
+<body>
+<!--
+<div id="target">
+aaaaa
+</div>
+
+<div id="content">
+<p>test 01</p>
+<p>test 02</p>
+<p>test 03</p>
+<p>test 04</p>
+<p>test 05</p>
+<p>test 06</p>
+<p>test 07</p>
+<p>test 08</p>
+<p>test 09</p>
+<p>test 10</p>
+</div>
+-->
+
+<div id="hoho">aaaaaaaaaaaa</div>
+<div id="huhu">
+<a href="http://imgur.com/mXc4xdb"><img src="http://i.imgur.com/mXc4xdb.jpg" alt="" title="Hosted by imgur.com" /></a>
+<a href="http://imgur.com/QrDBx"><img src="http://i.imgur.com/QrDBx.jpg" alt="" title="Hosted by imgur.com" /></a>
+<a href="http://imgur.com/0cjnd"><img src="http://i.imgur.com/0cjnd.jpg" alt="" title="Hosted by imgur.com" /></a>
+<a href="http://imgur.com/K9O3H"><img src="http://i.imgur.com/K9O3H.jpg" alt="" title="Hosted by imgur.com" /></a>
+<a href="http://imgur.com/Dln66"><img src="http://i.imgur.com/Dln66.gif" alt="" title="Hosted by imgur.com" /></a>
+<a href="http://imgur.com/IHQlz"><img src="http://i.imgur.com/IHQlz.jpg" alt="" title="Hosted by imgur.com" /></a>
+<a href="http://imgur.com/MQHYB"><img src="http://i.imgur.com/MQHYB.jpg" alt="" title="Hosted by imgur.com" /></a>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+<script src="jQuery.slide.js"></script>
+<script>
+//text
+//$("#target").slide();
+
+//image
+$("#hoho").slide({ 
+    target: '#hoho',
+    content: '#huhu a',
+    interval: 5000
+});
+</script>
+</body>
+</html>
