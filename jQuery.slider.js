@@ -1,6 +1,6 @@
 (function($){
     
-    $.fn.slide = function(options, method) {
+    $.fn.slide = function(options) {
         
         var options = $.extend({
             'target' : '#target',
