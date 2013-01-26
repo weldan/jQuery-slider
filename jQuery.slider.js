@@ -15,13 +15,27 @@
         var _length = _content.length;
         var _count = 0;
         var _seconds = options.interval; 
-        
+     
+        _target.empty();        
+                
         if (_source !== '') {
-            
+            $.get(_source, function(result){
+                var _data = $.parseJSON(result);
+                setInterval(function(){
+                    _target.slideUp('slow');
+                    setTimeout(function(){
+                        _target.html(_data[_count]);
+                        _target.slideDown('slow');
+                    }, 1000);
+                    _count++;
+                    if (_count == _data.length) {
+                        _count = 0;
+                    }
+                }, _seconds);    
+            });
         }else {
             _content.css('display', 'none');
             _content.first().addClass('slider-current-item');
-            _target.empty();
             setInterval(function(){
                 _target.slideUp('slow');
                 setTimeout(function(){

@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>example 01 - text</title>
+    <title>example 01</title>
     <style>
     #hoho {
         border:1px solid #000;
@@ -14,26 +14,8 @@
     </style>
 </head>
 <body>
-<!--
-<div id="target">
-aaaaa
-</div>
 
-<div id="content">
-<p>test 01</p>
-<p>test 02</p>
-<p>test 03</p>
-<p>test 04</p>
-<p>test 05</p>
-<p>test 06</p>
-<p>test 07</p>
-<p>test 08</p>
-<p>test 09</p>
-<p>test 10</p>
-</div>
--->
-
-<div id="hoho">aaaaaaaaaaaa</div>
+<div id="hoho">this text will get replaced with contents</div>
 <div id="huhu">
 <a href="http://imgur.com/mXc4xdb"><img src="http://i.imgur.com/mXc4xdb.jpg" alt="" title="Hosted by imgur.com" /></a>
 <a href="http://imgur.com/QrDBx"><img src="http://i.imgur.com/QrDBx.jpg" alt="" title="Hosted by imgur.com" /></a>
@@ -47,10 +29,7 @@ aaaaa
 <script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
 <script src="jQuery.slider.js"></script>
 <script>
-//text
-//$("#target").slide();
 
-//image
 $("#hoho").slide({ 
     target: '#hoho',
     content: '#huhu a',
