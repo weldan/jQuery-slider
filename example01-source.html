@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <title>example 01</title>
+    <style>
+    #hoho {
+        border:1px solid #000;
+        padding: 10px;
+        width: 400px;
+    }
+    img {
+        width: 80%;
+    }
+    </style>
+</head>
+<body>
+
+<div id="hoho">this text will get replaced with contents</div>
+<div id="huhu"></div>
+
+<script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+<script src="jQuery.slider.js"></script>
+<script>
+
+$("#hoho").slide({ 
+    target: '#hoho',
+    //use list of json objects as data source
+    source: 'imagelist.json.php',
+    interval: 5000
+});
+</script>
+</body>
+</html>
